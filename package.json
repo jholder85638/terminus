@@ -2,7 +2,7 @@
   "name": "term",
   "devDependencies": {
     "@types/fs-promise": "1.0.1",
-    "@types/node": "7.0.5",
+    "@types/node": "^7.0.5",
     "@types/webpack-env": "1.13.0",
     "apply-loader": "0.1.0",
     "awesome-typescript-loader": "3.1.2",
@@ -53,7 +53,9 @@
     ],
     "win": {
       "icon": "./build/windows/icon.ico",
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     },
     "squirrelWindows": {
       "iconUrl": "https://github.com/Eugeny/terminus/raw/master/build/windows/icon.ico",
@@ -63,7 +65,9 @@
       "category": "public.app-category.video",
       "icon": "./build/mac/icon.icns",
       "identity": null,
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     },
     "dmg": {
       "artifactName": "terminus-${version}-${os}-${arch}.dmg"
@@ -71,7 +75,9 @@
     "linux": {
       "category": "Utilities",
       "icon": "./build/icons",
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     },
     "deb": {
       "depends": [
@@ -101,5 +107,8 @@
     "lint": "tslint -c tslint.json -t stylish terminus-*/src/**/*.ts terminus-*/src/*.ts app/src/*.ts",
     "postinstall": "install-app-deps"
   },
-  "repository": "eugeny/terminus"
+  "repository": "eugeny/terminus",
+  "dependencies": {
+    "ngx-perfect-scrollbar": "^4.8.4"
+  }
 }

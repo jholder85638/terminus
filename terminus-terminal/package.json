@@ -37,6 +37,7 @@
     "terminus-settings": "*"
   },
   "dependencies": {
+    "@angular/core": "^4.4.6",
     "@types/async-lock": "0.0.19",
     "async-lock": "^1.0.0",
     "font-manager": "0.2.2",
