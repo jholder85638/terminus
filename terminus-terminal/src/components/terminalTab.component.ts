@@ -100,7 +100,7 @@ export class TerminalTabComponent extends BaseTabComponent {
             }
         })
         this.bellPlayer = document.createElement('audio')
-        this.bellPlayer.src = require('../bell.ogg')
+        this.bellPlayer.src = require<string>('../bell.ogg')
     }
 
     getRecoveryToken (): any {

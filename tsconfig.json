@@ -2,8 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2016",
-    "declaration": true,
-    "types": ["node"],
+    "declaration": false,
     "noImplicitAny": false,
     "removeComments": false,
     "emitDecoratorMetadata": true,
@@ -12,6 +11,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
+    "declaration": true,
     "skipLibCheck": true,
     "lib": [
       "dom",
